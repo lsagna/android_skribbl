@@ -18,9 +18,6 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-
-
-
         joinLobby.setOnClickListener {
             val address = ipJoin.text.toString()
             val port = 9999
@@ -52,7 +49,8 @@ class MenuActivity : AppCompatActivity() {
         val connection = Socket(address, port)
         val writer = connection.getOutputStream()
         val reader = Scanner(connection.getInputStream())
-        writer.write(1)
+        val msg = "hello"
+        writer.write(msg.toByteArray())
         while (active) {
             var input = ""
             input = reader.nextLine()
