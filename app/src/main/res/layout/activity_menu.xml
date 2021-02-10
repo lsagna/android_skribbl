@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/avatarImage"
         android:layout_width="wrap_content"

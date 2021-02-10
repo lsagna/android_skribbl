@@ -3,6 +3,7 @@ package com.example.skribbl
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_menu.*
 import kotlinx.coroutines.CoroutineScope
@@ -51,12 +52,15 @@ class MenuActivity : AppCompatActivity() {
         val reader = Scanner(connection.getInputStream())
         val msg = "hello"
         writer.write(msg.toByteArray())
+        //active = false
+        /*
         while (active) {
-            var input = ""
+            var input = "BLA"
             input = reader.nextLine()
+            runOnUiThread{Log.d("toto", "ici")}
             data = input
-            accessServer.text = data
         }
+        */
         reader.close()
         writer.close()
         connection.close()
