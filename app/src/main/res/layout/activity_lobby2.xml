@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 5f2a643a0614e3b1ffa0a43f8e1123e68124cbd6
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context=".LobbyActivity">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
     tools:context=".connection.LobbyActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -29,7 +20,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_lobby" />
+    <include layout="@layout/content_lobby2" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -40,4 +31,3 @@
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
->>>>>>> 5f2a643a0614e3b1ffa0a43f8e1123e68124cbd6

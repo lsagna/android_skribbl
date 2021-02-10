@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.skribbl">
 
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+>>>>>>> 5f2a643a0614e3b1ffa0a43f8e1123e68124cbd6
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,8 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".LobbyActivity"></activity>
         <activity android:name=".MenuActivity" />
+=======
+        <activity
+            android:name=".connection.LobbyActivity"
+            android:label="@string/title_activity_lobby"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> 5f2a643a0614e3b1ffa0a43f8e1123e68124cbd6
         <activity android:name=".GameActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
