@@ -5,7 +5,6 @@ import android.graphics.*
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
-import com.example.skribbl.R
 
 private const val STROKE = 12f
 
@@ -19,6 +18,8 @@ class MyCanvas(context: Context) : View(context) {
 
     private lateinit var extraCanvas: Canvas
     private lateinit var extraBitmap: Bitmap
+    private var path = Path()
+    private val touchTolerance = ViewConfiguration.get(context).scaledTouchSlop
     private val paint = Paint().apply {
         color = pencilColor
         isAntiAlias = true
@@ -28,8 +29,6 @@ class MyCanvas(context: Context) : View(context) {
         strokeCap = Paint.Cap.ROUND
         strokeWidth = STROKE
     }
-    private var path = Path()
-    private val touchTolerance = ViewConfiguration.get(context).scaledTouchSlop
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
