@@ -11,7 +11,7 @@
         app:layout_constraintBottom_toTopOf="@id/linearV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="20dp"></TextView>
+        android:layout_marginStart="20dp"/>
 
     <LinearLayout
         android:id="@+id/linearV"
@@ -82,26 +82,27 @@
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/settingsButton"
+    <Button
+        android:id="@+id/launchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/linearV"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="500dp"
-        android:layout_marginLeft="80dp"
+        app:layout_constraintBottom_toTopOf="@id/disconnectButton"
+        android:layout_marginTop="550dp"
+        android:text="Launch Game"
         />
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/leaveButton"
+    <Button
+        android:id="@+id/disconnectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearV"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Disconnect"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
